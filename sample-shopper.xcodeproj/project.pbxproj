@@ -12,6 +12,7 @@
 		FA624A22205D4DFC00E6D070 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA624A20205D4DFC00E6D070 /* Main.storyboard */; };
 		FA624A24205D4DFC00E6D070 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA624A23205D4DFC00E6D070 /* Assets.xcassets */; };
 		FA624A27205D4DFC00E6D070 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA624A25205D4DFC00E6D070 /* LaunchScreen.storyboard */; };
+		FA624A31205D4DFC00E6D070 /* customTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA624A30205D4DFC00E6D070 /* customTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FA624A23205D4DFC00E6D070 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA624A26205D4DFC00E6D070 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA624A28205D4DFC00E6D070 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA624A30205D4DFC00E6D070 /* customTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,31 @@
 		FA624A1B205D4DFC00E6D070 /* sample-shopper */ = {
 			isa = PBXGroup;
 			children = (
+				FA624A2F205D4DFC00E6D070 /* view */,
+				FA624A2E205D4DFC00E6D070 /* controller */,
 				FA624A1C205D4DFC00E6D070 /* AppDelegate.swift */,
-				FA624A1E205D4DFC00E6D070 /* ViewController.swift */,
 				FA624A20205D4DFC00E6D070 /* Main.storyboard */,
 				FA624A23205D4DFC00E6D070 /* Assets.xcassets */,
 				FA624A25205D4DFC00E6D070 /* LaunchScreen.storyboard */,
 				FA624A28205D4DFC00E6D070 /* Info.plist */,
 			);
 			path = "sample-shopper";
+			sourceTree = "<group>";
+		};
+		FA624A2E205D4DFC00E6D070 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				FA624A1E205D4DFC00E6D070 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		FA624A2F205D4DFC00E6D070 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA624A30205D4DFC00E6D070 /* customTextField.swift */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +157,7 @@
 			files = (
 				FA624A1F205D4DFC00E6D070 /* ViewController.swift in Sources */,
 				FA624A1D205D4DFC00E6D070 /* AppDelegate.swift in Sources */,
+				FA624A31205D4DFC00E6D070 /* customTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
