@@ -8,11 +8,22 @@
 
 import UIKit
 
+@IBDesignable
 class customTextField: UITextField {
 
     
+    
+    override func prepareForInterfaceBuilder() {
+        createCustomView()
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
+        createCustomView()
+        
+    }
+    
+    func createCustomView(){
         textAlignment = .center
         layer.cornerRadius = 5.0
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.25)
@@ -25,8 +36,6 @@ class customTextField: UITextField {
             attributedPlaceholder = place
             
         }
-        
-        
     }
     
 
