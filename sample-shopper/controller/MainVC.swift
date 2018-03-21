@@ -17,9 +17,7 @@ class MainVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-    print("I am heeeereeeee...!")
-        
+                
         let calculateButton = UIButton(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 60))
         
         calculateButton.setTitle("Calculate", for: .normal)
