@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Avenir.ttc">
+            <string>Avenir-Book</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--MainVC-->
         <scene sceneID="tne-QT-ifu">
@@ -43,26 +48,68 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7c-sE-hZP">
+                                <rect key="frame" x="16" y="253" width="343" height="54"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="NRd-Fx-biy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="50"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bmu-Qi-pOK">
+                                <rect key="frame" x="16" y="345" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="OUv-Ee-Fkp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyz-vG-Lf2">
+                                <rect key="frame" x="16" y="587" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="7ZE-V4-8sU"/>
+                                </constraints>
+                                <state key="normal" title="Clear Calculator">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearCalculator:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ogc-jW-cld"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vyz-vG-Lf2" secondAttribute="trailing" constant="16" id="6ky-Gh-a5o"/>
+                            <constraint firstItem="vyz-vG-Lf2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="A1P-n7-c5J"/>
                             <constraint firstItem="59g-Mt-HWC" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Bk4-Pw-mPZ"/>
+                            <constraint firstItem="E7c-sE-hZP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G4J-fe-zim"/>
                             <constraint firstItem="sEN-GG-7XT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="JKM-IV-nvT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wlg-5f-9hp" secondAttribute="trailing" constant="16" id="Ke1-4N-k5O"/>
                             <constraint firstItem="hO8-GP-5cb" firstAttribute="top" secondItem="wlg-5f-9hp" secondAttribute="bottom" constant="8" id="NhM-mN-LQm"/>
+                            <constraint firstItem="Bmu-Qi-pOK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NnG-1Z-d4C"/>
                             <constraint firstItem="59g-Mt-HWC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="P5A-rr-ODz"/>
                             <constraint firstItem="hO8-GP-5cb" firstAttribute="trailing" secondItem="wlg-5f-9hp" secondAttribute="trailing" id="Uif-Uo-SWf"/>
+                            <constraint firstItem="E7c-sE-hZP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="VXZ-jt-nR5"/>
                             <constraint firstItem="hO8-GP-5cb" firstAttribute="leading" secondItem="wlg-5f-9hp" secondAttribute="leading" id="cKu-DM-fK6"/>
+                            <constraint firstItem="E7c-sE-hZP" firstAttribute="top" secondItem="hO8-GP-5cb" secondAttribute="bottom" constant="32" id="e2R-Nj-yJG"/>
                             <constraint firstItem="sEN-GG-7XT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="f7q-Nv-d6g"/>
+                            <constraint firstItem="Bmu-Qi-pOK" firstAttribute="width" secondItem="E7c-sE-hZP" secondAttribute="width" id="gat-fi-6FR"/>
                             <constraint firstItem="59g-Mt-HWC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hXh-hb-RvM"/>
                             <constraint firstItem="wlg-5f-9hp" firstAttribute="top" secondItem="sEN-GG-7XT" secondAttribute="bottom" constant="25" id="hvF-ub-zcO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E7c-sE-hZP" secondAttribute="trailing" constant="16" id="kCK-aH-wvq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vyz-vG-Lf2" secondAttribute="bottom" constant="20" id="kER-sb-aeY"/>
+                            <constraint firstItem="Bmu-Qi-pOK" firstAttribute="top" secondItem="E7c-sE-hZP" secondAttribute="bottom" constant="38" id="rdT-il-sjH"/>
                             <constraint firstItem="59g-Mt-HWC" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="vNo-Lg-dvH"/>
                             <constraint firstItem="wlg-5f-9hp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zqO-Qo-5a7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="hoursLabel" destination="Bmu-Qi-pOK" id="fGZ-Q1-Dvy"/>
                         <outlet property="priceText" destination="hO8-GP-5cb" id="cMQ-W1-vWo"/>
+                        <outlet property="resultLabel" destination="E7c-sE-hZP" id="Bag-a0-MbY"/>
                         <outlet property="wageText" destination="wlg-5f-9hp" id="fVu-1F-arX"/>
                     </connections>
                 </viewController>
